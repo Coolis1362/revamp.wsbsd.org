@@ -31,8 +31,29 @@
             <li>Visual C++ Redistributable Runtime 2017-2026 (yes it is named like that, according to the Microsoft page)</li>
         </ul>
         <h3>Installation</h3>
-        <p>Alright, let's first install Visual C++ Redistributable Runtime 2017-2026. (Skip this step if you already have it installed.) You can <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">click here</a> to download it. Click on the X64 Version. and follow the Installation instructions.</p>
-        <p>Then, Download the latest installer from the <a href="../download.html">Downloads Page</a>.</p>
+        <p>Alright, let's first install Visual C++ Redistributable Runtime 2017-2026. (Skip this step if you already have it installed.) You can <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">click here</a> to download it. Click on the X64 Version and follow the installation instructions.</p>
+        <p>Then, download the latest installer from the <a href="../download.html">Downloads Page</a>.</p>
+        <h3>Running the Installer</h3>
+        <p>Once you have downloaded the WSBSD Revamp installer, follow these steps:</p>
+        <ol>
+            <li>Run the WSBSD Revamp installer (.exe file)</li>
+            <li>On the first page, click <strong>Next</strong></li>
+            <li>On the second page, click <strong>Install</strong></li>
+            <li>Wait for the installation to complete. The installer will set up all available BSD distributions (OpenBSD, NetBSD, and FreeBSD)</li>
+        </ol>
+        <h3>First Use</h3>
+        <p>After installation is complete:</p>
+        <ol>
+            <li>Click the Start Menu</li>
+            <li>Search for one of the available BSD systems: <strong>OpenBSD</strong>, <strong>NetBSD</strong>, or <strong>FreeBSD</strong></li>
+            <li>Click on your preferred choice to launch the BSD environment</li>
+        </ol>
+        <h3>Basic Commands</h3>
+        <p>Once you have launched a BSD environment, you can type <strong>help</strong> to see a list of available commands.</p>
+        <p>The <strong>cc</strong> command is the C compiler available in WSBSD Revamp. It currently supports compiling assembly files using <strong>NASM</strong> (Netwide Assembler) and <strong>LLVM's ld.ldd</strong> (linker) to produce executable files (a.out).</p>
+        <p>Example:</p>
+        <pre>cc program.asm</pre>
+        <p>This will compile your assembly file and create an executable output file.</p>
     </section>
 </body>
 </html>
